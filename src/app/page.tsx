@@ -42,7 +42,7 @@ export default function Home() {
 
   return (
     <div
-      className={`min-h-[100vh] p-10 px-40 lg:px-80 ${
+      className={`min-h-[100vh] p-10 px-10 lg:px-40 xl:px-80 w-full ${
         randomState.isDarkMode ? "bg-black text-white" : "bg-white  text-black"
       } ${randomState.font} ${
         randomState.persona.name == "neural net bogan" ? "rotate-180" : ""
