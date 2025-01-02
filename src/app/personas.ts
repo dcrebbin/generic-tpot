@@ -1,5 +1,124 @@
 export const personas = [
   {
+    name: "Survivor Plane",
+    subtitle: "rethinking what you see (and don't see)",
+    image: "/personas/plane.jpeg",
+    articleTitle: "the unseen lessons of survivorship bias",
+    articleSubtitle: "why the bullet holes don't tell the whole story",
+    articles: [
+      {
+        title: "the unseen lessons of survivorship bias",
+        body: `During World War II, engineers analyzing returning planes noticed bullet
+        holes concentrated on the wings and tail. Naturally, they thought, "Reinforce
+        these areas." But a mathematician named Abraham Wald flipped the script: the
+        planes that didn't return had damage elsewhere—the engine and cockpit. It's
+        a classic example of survivorship bias: focusing only on visible outcomes,
+        while ignoring the silent data of failure.`,
+      },
+      {
+        title: "survivorship bias in everyday life",
+        body: `Success stories dominate our world. We hear about the garage startups
+        that became billion-dollar empires but not the thousands that fizzled out.
+        We idolize the fitness guru who eats kale and runs marathons, ignoring the
+        many who did the same and achieved nothing extraordinary. The key to wisdom
+        is asking, "What's missing?"`,
+      },
+      {
+        title: "why the data you don't see matters most",
+        body: `The planes with bullet holes returned, meaning they survived despite
+        the damage. Reinforcing the wrong areas would have been a waste. Survivorship
+        bias reminds us: data is incomplete without context. Always question what
+        isn't in the picture.`,
+      },
+      {
+        title: "from wartime planes to modern startups",
+        body: `In tech, survivorship bias is rampant. We celebrate founders who "dropped
+        out of college and made it big," like Steve Jobs or Mark Zuckerberg, while
+        ignoring countless others who dropped out and struggled. The lesson? Success
+        is multi-dimensional, and cherry-picking examples distorts reality.`,
+      },
+      {
+        title: "the art of asking better questions",
+        body: `Survivorship bias thrives on unasked questions. Why did some fail?
+        What patterns exist among the unseen? Whether analyzing planes, businesses,
+        or personal goals, learning to ask the right questions is the first step
+        toward true understanding.`,
+      },
+      {
+        title: "counteracting survivorship bias in decision-making",
+        body: `Recognizing survivorship bias starts with a simple shift: focus on
+        absences, not just presences. In decision-making, look for the "missing
+        data." What options didn't make the cut? What paths weren't taken? Only then
+        can you make choices based on the full picture.`,
+      },
+      {
+        title: "the quiet wisdom of Abraham Wald",
+        body: `Wald's insight was deceptively simple but revolutionary: don't just
+        study the survivors. His work saved countless lives during WWII and serves as
+        a reminder that the greatest insights often come from reframing the obvious.
+        Sometimes, the key isn't what's there but what isn't.`,
+      },
+    ],
+  },
+  {
+    name: "Butter Chicken",
+    subtitle: "celebrating creamy curries and Indian delights",
+    image: "/personas/butter-chicken.jpeg",
+    articleTitle: "the buttery road to happiness",
+    articleSubtitle: "a love letter to butter chicken, naan, and mango lassi",
+    articles: [
+      {
+        title: "the buttery road to happiness",
+        body: `Butter chicken, or *murgh makhani*, is more than just a dish—it's a hug
+        in curry form. A perfect blend of tender chicken, creamy tomato sauce, and
+        warm spices, it's the reason why 'just one more bite' is never enough. Serve
+        it with fluffy naan or fragrant basmati rice for the ultimate comfort meal.`,
+      },
+      {
+        title: "naan: the perfect partner",
+        body: `Naan bread is the unsung hero of Indian cuisine. Soft, pillowy, and
+        slightly charred, it's the ideal vessel for scooping up every last drop of
+        curry. Garlic naan adds a garlicky punch, while butter naan doubles down on
+        the decadence. Pro tip: don't skip the brushing of ghee right before serving!`,
+      },
+      {
+        title: "mango lassi: the sweet sidekick",
+        body: `A good mango lassi is like sunshine in a glass. The creamy yogurt and
+        sweet mango balance each other perfectly, offering a cooling respite from
+        fiery curries. Add a pinch of cardamom for a touch of magic. It's not just a
+        drink—it's dessert and hydration in one.`,
+      },
+      {
+        title: "the origins of butter chicken",
+        body: `Butter chicken was born in the kitchens of Moti Mahal, a legendary
+        restaurant in Delhi. Leftover tandoori chicken met a rich, buttery tomato
+        gravy, and the rest is culinary history. It's proof that sometimes, the best
+        dishes come from humble beginnings.`,
+      },
+      {
+        title: "spice it your way",
+        body: `Butter chicken can be as mild or spicy as you like. The creamy base
+        softens the heat, so don't be afraid to experiment. Want it fiery? Add some
+        red chili powder. Prefer it mellow? Let the natural sweetness of tomatoes and
+        cream shine through.`,
+      },
+      {
+        title: "naan hacks: making it at home",
+        body: `Making naan at home might sound intimidating, but it's simpler than you
+        think. A hot cast-iron skillet mimics the high heat of a tandoor. Roll the
+        dough thin, slap it on, and watch it puff up. Bonus points for brushing on
+        garlic butter while it's still hot.`,
+      },
+      {
+        title: "the joy of mangoes",
+        body: `The secret to a great mango lassi is picking the right mangoes.
+        Alphonso mangoes, known as the king of mangoes, are ideal. Their natural
+        sweetness and smooth texture make every sip an indulgence. Canned mango pulp
+        works too—because mango joy shouldn't be seasonal!`,
+      },
+    ],
+  },
+  {
     name: "teapot",
     subtitle: "exploring the art and science of tea",
     image: "/personas/teapot.png",
@@ -37,7 +156,7 @@ export const personas = [
       {
         title: "tea bags vs. loose leaf",
         body: `Tea bags are convenient, sure, but loose leaf tea is where the magic
-        happens. Whole leaves unfurl, releasing flavors you just can’t get from
+        happens. Whole leaves unfurl, releasing flavors you just can't get from
         crushed, bagged dust. Invest in a good infuser or teapot—you'll never look
         back.`,
       },
@@ -1015,7 +1134,7 @@ export const bookRecs = [
     name: "Atomic Habits",
     link: "https://amzn.to/4gJ1c63",
     review:
-      "A deeply introspective guide to habit formation, this book explores the microcosmic transformations that ripple into macrocosmic change. Clear’s prose oscillates between pragmatism and poeticism, making the mundane act of habit-building feel akin to an existential journey.",
+      "A deeply introspective guide to habit formation, this book explores the microcosmic transformations that ripple into macrocosmic change. Clear's prose oscillates between pragmatism and poeticism, making the mundane act of habit-building feel akin to an existential journey.",
   },
   {
     name: "Algorithms to Live By",
@@ -1033,7 +1152,7 @@ export const bookRecs = [
     name: "Zero to One: Notes on Startups, or How to Build the Future",
     link: "https://amzn.to/3DOa5fT",
     review:
-      "Thiel’s treatise transcends the platitudes of entrepreneurial self-help, delivering instead a philosophical exploration of creation and originality. It is not merely about building startups; it is about reshaping reality with the audacity of a contrarian visionary.",
+      "Thiel's treatise transcends the platitudes of entrepreneurial self-help, delivering instead a philosophical exploration of creation and originality. It is not merely about building startups; it is about reshaping reality with the audacity of a contrarian visionary.",
   },
   {
     name: "How to Design Programs: An Introduction to Programming and Computing",
@@ -1045,13 +1164,13 @@ export const bookRecs = [
     name: "Introduction to Algorithms, fourth edition",
     link: "https://amzn.to/40hnIx4",
     review:
-      "Often referred to as the ‘Bible’ of algorithms, this book is less a manual and more an intellectual pilgrimage. Its dense proofs and rigorous exposition reward the reader with insights that feel less learned than unearthed, like forgotten relics of ancient computational wisdom.",
+      "Often referred to as the ‘Bible' of algorithms, this book is less a manual and more an intellectual pilgrimage. Its dense proofs and rigorous exposition reward the reader with insights that feel less learned than unearthed, like forgotten relics of ancient computational wisdom.",
   },
   {
     name: "Designing Data-Intensive Applications",
     link: "https://amzn.to/402WrNo",
     review:
-      "Kleppmann’s work is a masterclass in taming the chaos of distributed systems and large-scale data flows. It takes the reader on an odyssey through CAP theorems and consistency guarantees, a journey where each challenge reveals the ineffable beauty of modern data architecture.",
+      "Kleppmann's work is a masterclass in taming the chaos of distributed systems and large-scale data flows. It takes the reader on an odyssey through CAP theorems and consistency guarantees, a journey where each challenge reveals the ineffable beauty of modern data architecture.",
   },
   {
     name: "Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations",
