@@ -2,7 +2,7 @@ export const personas = [
   {
     name: "Survivor Plane",
     subtitle: "rethinking what you see (and don't see)",
-    image: "/personas/plane.jpeg",
+    image: "/personas/plane.png",
     articleTitle: "the unseen lessons of survivorship bias",
     articleSubtitle: "why the bullet holes don't tell the whole story",
     articles: [
