@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { BlockMath } from "react-katex";
 import "katex/dist/katex.min.css";
-import { forumlae, personas, pfp } from "./personas/personas";
+import { forumlae, interests, personas, pfp } from "./personas/personas";
 import { useState, useEffect } from "react";
 
 export default function Home() {
@@ -16,6 +16,14 @@ export default function Home() {
     useSanta: Math.random() > 0.8,
     useGlasses: Math.random() > 0.8,
     useMaths: Math.random() > 0.5,
+    interests: (() => {
+      const randomInterests = new Set();
+      while (randomInterests.size < 3) {
+        const random = Math.floor(Math.random() * interests.length);
+        randomInterests.add(interests[random]);
+      }
+      return Array.from(randomInterests);
+    })(),
     font: (() => {
       const random = Math.floor(Math.random() * 3);
       if (random === 0) return "font-mono";
@@ -81,6 +89,8 @@ export default function Home() {
           </a>
         </li>
       </ul>
+      interests: {randomState.interests.join(" | ")}
+      <br></br>
       <br></br>
       <h3 className="text-2xl font-bold">
         {randomState.useGreenText ? ">" : ""} {randomState.persona.articleTitle}

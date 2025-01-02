@@ -569,6 +569,23 @@ export const personas = [
   },
 ];
 
+export const interests = [
+  "ml",
+  "computer science",
+  "dead lifting",
+  "league of legends",
+  "capybaras",
+  "philosophy",
+  "quantum physics",
+  "pondering",
+  "steak",
+  "deep conversations",
+  "the classics",
+  "musing on the nature of reality",
+  "the meaning of life",
+  "rien ne sert de grandir",
+];
+
 export const forumlae = [
   "A = Q \\Lambda Q^T",
   "\\lambda = \\lim_{n \\to \\infty} \\frac{1}{n} \\sum_{i=1}^n \\ln |r - 2r x_i|",
