@@ -117,21 +117,27 @@ export default function Home() {
         {randomState.hasGithub && (
           <li>
             <a
+              target="_blank"
               className="text-blue-700 hover:underline"
-              href="https://github.com/"
+              href="https://github.com/dcrebbin"
             >
               • github
             </a>
           </li>
         )}
         <li>
-          <a className="text-blue-700 hover:underline" href="https://x.com/">
+          <a
+            target="_blank"
+            className="text-blue-700 hover:underline"
+            href="https://x.com/dcrebbin_"
+          >
             • x
           </a>
         </li>
         {randomState.hasGoogleScholar && (
           <li>
             <a
+              target="_blank"
               className="text-blue-700 hover:underline"
               href="https://scholar.google.com/"
             >
@@ -142,6 +148,7 @@ export default function Home() {
         {randomState.hasArxiv && (
           <li>
             <a
+              target="_blank"
               className="text-blue-700 hover:underline"
               href="https://arxiv.org/"
             >
@@ -164,7 +171,7 @@ export default function Home() {
       {randomState.persona.articles.map((article, index) => (
         <div
           key={index}
-          className="flex flex-col justify-start font-mono items-start gap-4"
+          className="flex flex-col justify-start items-start gap-4"
         >
           <h5 className="text-lg font-bold">{article.title}</h5>
           <p>{article.body}</p>
