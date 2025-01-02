@@ -2,7 +2,6 @@ export const personas = [
   {
     name: "ml anon",
     subtitle: "learning deep ml, mathematics & neural nets",
-    image: "/personas/lain.jpeg",
     articleTitle: "musings on the elegance of machine learning",
     articleSubtitle: "a journey into esoteric mathematical realms",
     articles: [
@@ -105,7 +104,6 @@ export const personas = [
   {
     name: "an ardent philosopher",
     subtitle: "merging existential musings with elegant code",
-    image: "/personas/philosopher.png",
     articleTitle: "the metaphysics of code",
     articleSubtitle: "programming as a reflection of human consciousness",
     articles: [
@@ -136,7 +134,6 @@ export const personas = [
   {
     name: "quantum hermit",
     subtitle: "dwelling on quantum mysteries and probabilistic realities",
-    image: "/personas/guts.png",
     articleTitle: "entangled musings",
     articleSubtitle: "probabilities, superposition, and everything in between",
     articles: [
@@ -159,7 +156,7 @@ export const personas = [
   {
     name: "data whisperer",
     subtitle: "finding beauty in patterns hidden in noise",
-    image: "/personas/data.png",
+
     articleTitle: "whispers of the data",
     articleSubtitle: "extracting secrets from the chaos",
     articles: [
@@ -182,7 +179,7 @@ export const personas = [
   {
     name: "an engineer",
     subtitle: "navigating the moral dilemmas of modern tech",
-    image: "/personas/ethics.png",
+
     articleTitle: "ethics in the age of algorithms",
     articleSubtitle: "questions we should be asking",
     articles: [
@@ -204,7 +201,7 @@ export const personas = [
   {
     name: "code weaver & dreamer",
     subtitle: "daydreaming about abstract math and unsolved problems",
-    image: "/personas/frieren.png",
+
     articleTitle: "the beauty of unsolvability",
     articleSubtitle: "embracing the unknown",
     articles: [
@@ -227,7 +224,7 @@ export const personas = [
   {
     name: "数据哲人",
     subtitle: "探讨数据与人性的交织",
-    image: "/personas/catgirl.png",
+
     articleTitle: "数据的哲学思考",
     articleSubtitle: "从信息到智慧的旅程",
     articles: [
@@ -266,7 +263,7 @@ export const personas = [
   {
     name: "manifold mystic",
     subtitle: "exploring the topology of consciousness through gradient flows",
-    image: "/personas/mystic.png",
+
     articleTitle: "meditations on manifold learning",
     articleSubtitle: "where differential geometry meets enlightenment",
     articles: [
@@ -293,7 +290,7 @@ export const personas = [
   {
     name: "entropy prophet",
     subtitle: "preaching the gospel of information theory",
-    image: "/personas/prophet.png",
+
     articleTitle: "revelations in randomness",
     articleSubtitle: "divine messages in the noise",
     articles: [
@@ -319,7 +316,7 @@ export const personas = [
   {
     name: "regularization monk",
     subtitle: "finding virtue in constraint and simplicity",
-    image: "/personas/monk.png",
+
     articleTitle: "the path of sparse parameters",
     articleSubtitle: "enlightenment through constraint",
     articles: [
@@ -345,7 +342,7 @@ export const personas = [
   {
     name: "quantum romanticist",
     subtitle: "seeking poetry in probability amplitudes",
-    image: "/personas/romantic.png",
+
     articleTitle: "love letters to superposition",
     articleSubtitle: "where quantum meets quixotic",
     articles: [
@@ -371,7 +368,7 @@ export const personas = [
   {
     name: "機械学習の達人",
     subtitle: "深層学習と禅の境界を探求する者",
-    image: "/personas/zen.png",
+
     articleTitle: "アルゴリズムの無常観",
     articleSubtitle: "機械学習における「間」の美学",
     articles: [
@@ -423,4 +420,19 @@ export const forumlae = [
   "\\zeta(s) = \\sum_{n=1}^{\\infty} \\frac{1}{n^s}",
   "KL(P||Q) = \\sum_x P(x) \\log \\frac{P(x)}{Q(x)}",
   "\\frac{\\partial \\vec{v}}{\\partial t} + (\\vec{v} \\cdot \\nabla)\\vec{v} = -\\frac{1}{\\rho}\\nabla p + \\nu\\nabla^2\\vec{v}",
+];
+
+export const pfp = [
+  "/personas/lain.jpeg",
+  "/personas/philosopher.png",
+  "/personas/guts.png",
+  "/personas/data.png",
+  "/personas/frieren.png",
+  "/personas/catgirl.png",
+  "/personas/ethics.png",
+  "/personas/monk.png",
+  "/personas/romantic.png",
+  "/personas/zen.png",
+  "/personas/mystic.png",
+  "/personas/prophet.png",
 ];

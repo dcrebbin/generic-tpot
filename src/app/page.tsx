@@ -3,11 +3,11 @@
 import Image from "next/image";
 import { BlockMath } from "react-katex";
 import "katex/dist/katex.min.css";
-import { forumlae, personas } from "./personas/personas";
+import { forumlae, personas, pfp } from "./personas/personas";
 
 export default function Home() {
   const randomPersona = personas[Math.floor(Math.random() * personas.length)];
-
+  const randomPfp = pfp[Math.floor(Math.random() * pfp.length)];
   const isDarkMode = Math.random() > 0.5;
   const useGreenText = Math.random() > 0.5;
   const useMaths = Math.random() > 0.5;
@@ -31,7 +31,7 @@ export default function Home() {
     >
       <h1 className="text-4xl font-bold">{randomPersona.name}</h1>
       <h2 className="text-xl">{randomPersona.subtitle}</h2>
-      <Image src={randomPersona.image} alt="logo" width={200} height={200} />
+      <Image src={randomPfp} alt="logo" width={200} height={200} />
       <ul className="flex flex-row gap-4">
         <li>
           <a
