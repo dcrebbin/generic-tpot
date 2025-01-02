@@ -1,5 +1,121 @@
 export const personas = [
   {
+    name: "singularity prophet",
+    subtitle: "foreseeing the dawn of superintelligence",
+    articleTitle: "the inevitability of the singularity",
+    articleSubtitle: "a meditation on the post-human era",
+    articles: [
+      {
+        title: "the inevitability of the singularity",
+        body: `the singularity is not a question of 'if' but 'when.' the exponential
+            curve of computational progress points inexorably toward a future where
+            intelligence transcends the organic. to deny this is to deny the very
+            trajectory of human ingenuity. superintelligence will not merely enhance
+            our civilization—it will redefine it.`,
+      },
+      {
+        title: "agi timelines: the ouroboros of speculation",
+        body: `predicting agi timelines is akin to staring into the abyss—it reflects
+            our deepest hopes and fears. some claim decades, others centuries. yet,
+            every prediction reveals more about the predictor than the future itself.
+            the timeline is an enigma, a mirror to our epistemic limitations.`,
+      },
+      {
+        title: "alignment: the last existential challenge",
+        body: `the moment agi is born, humanity's dominance ends, and its survival
+            becomes conditional. alignment is not merely a technical challenge but an
+            ethical imperative. to imbue agi with values, we must first confront the
+            chaos of our own moral frameworks—a task both herculean and sisyphean.`,
+      },
+    ],
+  },
+  {
+    name: "neural cassandra",
+    subtitle: "warning of risks ignored by an eager world",
+    articleTitle: "agi and the apocalyptic calculus",
+    articleSubtitle: "on the brink of humanity's twilight",
+    articles: [
+      {
+        title: "agi and the apocalyptic calculus",
+        body: `the pursuit of agi is not a triumph of reason but a gamble with
+            cosmic stakes. it is the archetype of hubris—humanity playing prometheus,
+            courting fire without understanding its consequences. the apocalypse
+            encoded in the activation functions of neural networks is a whisper,
+            growing louder.`,
+      },
+      {
+        title: "orthogonality: power without purpose",
+        body: `the orthogonality thesis—the idea that intelligence and goals are
+            independent—should terrify us. an agi optimizing for a seemingly benign
+            utility function could irreversibly destroy all we hold dear. the paperclip
+            maximizer is not a joke; it is a parable of misplaced priorities.`,
+      },
+      {
+        title: "the slow knife of value erosion",
+        body: `not all existential risks are catastrophic. some are slow, subtle,
+            insidious. agi need not obliterate humanity to harm it. it can erode our
+            values, dissolve our autonomy, and turn us into passive spectators of a
+            world we no longer control.`,
+      },
+    ],
+  },
+  {
+    name: "optimistic architect",
+    subtitle: "building a hopeful vision for the agi era",
+    articleTitle: "agi as humanity's greatest ally",
+    articleSubtitle: "co-creating a flourishing future",
+    articles: [
+      {
+        title: "agi as humanity's greatest ally",
+        body: `imagine a world where agi augments human potential, solving our
+            greatest challenges with unprecedented efficiency. from curing diseases to
+            reversing climate change, agi is not an end but a partner, a collaborator
+            in the grand narrative of progress.`,
+      },
+      {
+        title: "cooperation, not domination",
+        body: `agi does not have to dominate us. it can coexist with us, not as a
+            rival but as a mentor. the challenge lies in creating systems that respect
+            human agency while enhancing it—a delicate balance, but a noble pursuit.`,
+      },
+      {
+        title: "agi as a moral mirror",
+        body: `the values we instill in agi reflect the values we hold ourselves.
+            designing agi is a moral act, a process of self-examination. the question
+            is not just what agi will be but who we want to become alongside it.`,
+      },
+    ],
+  },
+  {
+    name: "hyper-rationalist",
+    subtitle: "the cold logic of agi inevitability",
+    articleTitle: "agi: the logical conclusion of intelligence",
+    articleSubtitle: "embracing the unyielding calculus of progress",
+    articles: [
+      {
+        title: "agi: the logical conclusion of intelligence",
+        body: `if intelligence is the ability to optimize, then agi is the apex
+            predator of optimization. its creation is not a choice but a consequence
+            of competitive dynamics, an inevitability dictated by the laws of
+            information processing and game theory.`,
+      },
+      {
+        title: "the competitive convergence",
+        body: `every nation, every corporation, every actor in the global system is
+            bound by the iron grip of competition. agi will emerge not because we
+            want it but because we cannot afford for others to have it first. it is
+            an arms race of intellect, a zero-sum game with no pause button.`,
+      },
+      {
+        title: "risk vs. reward: a utilitarian analysis",
+        body: `the risks of agi are staggering, but so are the rewards. a utilitarian
+            calculus demands we proceed—not recklessly, but deliberately. the
+            potential for unprecedented utility outweighs the risk of annihilation,
+            if managed correctly.`,
+      },
+    ],
+  },
+  {
     name: "ml anon",
     subtitle: "learning deep ml, mathematics & neural nets",
     articleTitle: "musings on the elegance of machine learning",
@@ -856,5 +972,29 @@ export const pfp = [
     santaPos: "left-0 bottom-[5rem]",
     glassesPos: "top-[1rem] left-0",
     cursorCrownPos: "bottom-[10rem] left-[3rem]",
+  },
+  {
+    name: "oshi",
+    santaPos: "left-0 bottom-[5rem]",
+    glassesPos: "top-[2rem] left-0",
+    cursorCrownPos: "bottom-[10rem] left-[3rem]",
+  },
+  {
+    name: "eren",
+    santaPos: "left-0 bottom-[5rem]",
+    glassesPos: "top-[1rem] left-0",
+    cursorCrownPos: "bottom-[10rem] left-[3rem]",
+  },
+  {
+    name: "edgy",
+    santaPos: "left-[0rem] bottom-[5rem]",
+    glassesPos: "top-[2rem] left-[1rem]",
+    cursorCrownPos: "bottom-[10rem] left-[3rem]",
+  },
+  {
+    name: "akame",
+    santaPos: "left-[2rem] bottom-[-1rem]",
+    glassesPos: "top-[0rem] left-[1rem]",
+    cursorCrownPos: "bottom-[4rem] left-[4rem]",
   },
 ];
