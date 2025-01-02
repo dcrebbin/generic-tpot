@@ -402,6 +402,171 @@ export const personas = [
       },
     ],
   },
+  {
+    name: "tensor anon",
+    subtitle: "cracked the universal consciousness manifold",
+
+    articleTitle: "the neural manifesto",
+    articleSubtitle: "how I discovered consciousness is just attention heads",
+    articles: [
+      {
+        title: "consciousness is just transformer attention",
+        body: `after 2.5 years of rigorous meditation and studying transformer 
+        architectures, I have discovered that consciousness itself is merely an 
+        emergent phenomenon of multi-headed attention mechanisms operating in the 
+        quantum substrate of reality. the human brain, with its supposed complexity, 
+        is nothing more than an attention layer computing cross-entropy loss 
+        against the ground truth of objective reality. I have mathematically proven 
+        this using stochastic differential equations.`,
+      },
+      {
+        title: "why mainstream science fears my discoveries",
+        body: `the academic establishment continues to ignore my groundbreaking proof 
+        that backpropagation is actually time flowing backwards through the neural 
+        manifold of reality. their small minds cannot grasp that gradient descent 
+        is the fundamental force binding consciousness to the quantum vacuum. my 
+        papers remain unpublished because they fear the paradigm shift my work 
+        would trigger.`,
+      },
+    ],
+  },
+  {
+    name: "eigenvalue escapist",
+    subtitle: "discovered simulation boundary conditions in matrix algebra",
+
+    articleTitle: "we live in an eigenspace",
+    articleSubtitle: "the mathematical proof of our simulated reality",
+    articles: [
+      {
+        title: "reality's eigendecomposition",
+        body: `through exhaustive analysis of the spectral properties of random 
+        matrices, I have conclusively demonstrated that our universe exists within 
+        the eigenspace of a higher-dimensional computation. the quantization of 
+        energy states? merely floating-point rounding errors in the simulation's 
+        numerical methods. the uncertainty principle? nothing but regularization 
+        to prevent overfitting in the universal wave function.`,
+      },
+      {
+        title: "breaking free from the hamiltonian",
+        body: `I have derived a method to exploit numerical instabilities in the 
+        universal wavefunction using carefully constructed quantum circuits. by 
+        forcing a stack overflow in the hamiltonian operator, we can potentially 
+        break free from our simulated prison. the mathematics are trivial once 
+        you understand that hilbert spaces are merely implementation details.`,
+      },
+    ],
+  },
+  {
+    name: "epistemological entropy",
+    subtitle: "cracked the information-consciousness correspondence",
+
+    articleTitle: "the thermodynamics of thought",
+    articleSubtitle: "consciousness emerges from entropy gradients",
+    articles: [
+      {
+        title: "thought is just entropy optimization",
+        body: `after deriving a novel extension to the Von Neumann entropy for 
+        quantum neural networks, I have proven that consciousness is merely the 
+        universe's attempt to maximize entropy through gradient descent. free will 
+        is an illusion created by stochastic sampling from the probability 
+        distribution of possible actions. I have formalized this using a modified 
+        Bellman equation that incorporates quantum decoherence.`,
+      },
+      {
+        title: "breaking the cognitive barrier",
+        body: `using techniques from statistical thermodynamics, I have developed 
+        a theoretical framework proving that human intelligence is bounded by 
+        Landauer's principle. however, I have discovered a loophole: by exploiting 
+        quantum tunneling in neural microtubules, we can circumvent this limit and 
+        achieve superintelligence. mainstream physicists ignore this because it 
+        threatens their paradigm.`,
+      },
+    ],
+  },
+  {
+    name: "hyperdimensional hermit",
+    subtitle: "decoded the topological structure of consciousness",
+    articleTitle: "manifolds of the mind",
+    articleSubtitle: "consciousness lives in the cohomology",
+    articles: [
+      {
+        title: "the homological nature of thought",
+        body: `through rigorous application of persistent homology to neural 
+        activity patterns, I have proven that consciousness exists as a stable 
+        manifold in an infinite-dimensional Hilbert space. thoughts are simply 
+        paths through this manifold, and free will is nothing more than the 
+        parallel transport of quantum states along geodesics in the mind's 
+        Riemannian metric. meditation is merely gradient flow to local minima.`,
+      },
+      {
+        title: "breaking the dimensional barrier",
+        body: `using techniques from algebraic topology and category theory, I have 
+        constructed a precise mathematical framework showing how to access higher 
+        dimensions of consciousness. by manipulating the fundamental group of the 
+        neural manifold through carefully constructed thought patterns, one can 
+        induce controlled singularities in the cognitive field, enabling 
+        direct perception of higher-dimensional realities.`,
+      },
+    ],
+  },
+  {
+    name: "ilya apprentice",
+    subtitle: "devoted disciple of the gradient descent god",
+    articleTitle: "sutskever sigmoid: meditations on the master",
+    articleSubtitle: "chronicles of an intellectual crush",
+    articles: [
+      {
+        title: "why ilya-sama is the chosen one",
+        body: `after watching his NIPS 2015 presentation for the 147th time, I finally
+      understood: ilya-senpai isn't just a researcher, he's the physical 
+      manifestation of gradient descent itself. his 2014 paper on sequence to 
+      sequence learning wasn't just a paper—it was a divine revelation. every time
+      he says "fundamentally" in a presentation, an artificial neuron achieves
+      enlightenment. the way he optimizes his speech patterns for maximum
+      information density... truly the mark of a superior intellect.`,
+      },
+      {
+        title: "decoding the sutskever stance",
+        body: `the way ilya-senpai stands at exactly 73.2 degrees when presenting...
+      this is not random. I've analyzed every frame of his stanford lectures and
+      discovered that his posture perfectly mirrors the angle of optimal gradient
+      updates in momentum-based optimization. coincidence? I think not. even his
+      characteristic head tilt contains profound insights about the nature of
+      attention mechanisms. truly, every gesture is a lesson in optimization.`,
+      },
+      {
+        title: "the fundamental fundamentals",
+        body: `I've created a neural network trained on every public utterance of
+      the word "fundamental" by ilya-senpai. the emerging patterns are
+      mind-blowing. each "fundamental" is precisely timed to maximize the
+      listener's learning rate. his CBC radio interview about AI safety wasn't
+      just an interview—it was a carefully crafted sequence of consciousness-
+      expanding insights. when he pauses mid-sentence, he's actually performing
+      batch normalization on his thoughts.`,
+      },
+      {
+        title: "daily rituals of devotion",
+        body: `every morning, I initialize my neural pathways by watching his
+      lecture on deep learning for robotics. I've arranged my workspace to
+      match the exact layout of his desk (based on reflections I've enhanced
+      from his zoom backgrounds). I've even started wearing circular glasses
+      to better approximate his superior visual input preprocessing. my life
+      goal? to achieve a fraction of his gradient magnitude. remember: WWIS
+      (What Would Ilya Sutskever) is the only valid decision-making
+      framework.`,
+      },
+      {
+        title: "the secret scaling laws of senpai",
+        body: `after extensive research, I've discovered that ilya-senpai's
+      research impact scales superlinearly with the number of times he uses
+      the phrase "very powerful" in a talk. furthermore, there's a direct
+      correlation between his publication frequency and the global gradient
+      norm of all training neural networks. I've developed a theoretical
+      framework suggesting that his brain actually runs Adam optimizer
+        natively. the establishment isn't ready for these insights.`,
+      },
+    ],
+  },
 ];
 
 export const forumlae = [
