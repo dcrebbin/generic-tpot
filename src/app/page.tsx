@@ -14,6 +14,7 @@ export default function Home() {
     isDarkMode: Math.random() > 0.5,
     useGreenText: Math.random() > 0.5,
     useSanta: Math.random() > 0.8,
+    useGlasses: Math.random() > 0.8,
     useMaths: Math.random() > 0.5,
     font: (() => {
       const random = Math.floor(Math.random() * 3);
@@ -40,6 +41,15 @@ export default function Home() {
       <h1 className="text-4xl font-bold">{randomState.persona.name}</h1>
       <h2 className="text-xl">{randomState.persona.subtitle}</h2>
       <div className="relative mt-10">
+        {randomState.useGlasses && (
+          <Image
+            className={`absolute ${randomState.pfp.glassesPos}`}
+            src="/addons/glasses.png"
+            alt="logo"
+            width={200}
+            height={200}
+          />
+        )}
         {randomState.useSanta && (
           <Image
             className={`absolute ${randomState.pfp.santaPos}`}
