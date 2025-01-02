@@ -20,6 +20,7 @@ export default function Home() {
     isDarkMode: Math.random() > 0.5,
     useGreenText: Math.random() > 0.5,
     useSanta: Math.random() > 0.8,
+    useCursorCrown: Math.random() > 0.8,
     useGlasses: Math.random() > 0.8,
     useMaths: Math.random() > 0.5,
     hasGoogleScholar: Math.random() > 0.98,
@@ -84,6 +85,15 @@ export default function Home() {
       <h1 className="text-4xl font-bold">{randomState.persona.name}</h1>
       <h2 className="text-xl">{randomState.persona.subtitle}</h2>
       <div className="relative mt-10">
+        {randomState.useCursorCrown && (
+          <Image
+            className={`absolute z-50 ${randomState.pfp.cursorCrownPos}`}
+            src="/addons/cursorCrown.png"
+            alt="logo"
+            width={100}
+            height={100}
+          />
+        )}
         {randomState.useGlasses && (
           <Image
             className={`absolute ${randomState.pfp.glassesPos}`}
