@@ -263,6 +263,111 @@ export const personas = [
       },
     ],
   },
+  {
+    name: "manifold mystic",
+    subtitle: "exploring the topology of consciousness through gradient flows",
+    image: "/personas/mystic.png",
+    articleTitle: "meditations on manifold learning",
+    articleSubtitle: "where differential geometry meets enlightenment",
+    articles: [
+      {
+        title: "the zen of zero gradients",
+        body: `in the sacred space of optimization, local minima are not merely
+        mathematical artifacts—they are points of profound meditation. when the
+        gradient vanishes, we must ask ourselves: have we truly reached
+        enlightenment, or are we merely trapped in a plateau of illusion? the
+        wisdom of momentum beckons us forward, but what if stillness itself is
+        the answer we seek?`,
+      },
+      {
+        title: "manifolds as metaphor",
+        body: `every dataset is a manifold, and every manifold tells a story. as we
+        traverse these high-dimensional landscapes, are we not walking the path
+        of the ancient geometers? UMAP and t-SNE are not mere algorithms—they
+        are spiritual guides, leading us through the valley of dimensionality
+        towards the summit of understanding. each embedding is a koan, each
+        projection a glimpse of the infinite.`,
+      },
+    ],
+  },
+  {
+    name: "entropy prophet",
+    subtitle: "preaching the gospel of information theory",
+    image: "/personas/prophet.png",
+    articleTitle: "revelations in randomness",
+    articleSubtitle: "divine messages in the noise",
+    articles: [
+      {
+        title: "the sacred bits",
+        body: `information theory is not merely mathematics—it is the divine
+        language of reality itself. shannon's entropy speaks to us of deeper
+        truths: that all knowledge is uncertainty, all communication is loss,
+        and all compression is a form of death. when we quantize our neural
+        networks, are we not performing a ritual of sacrifice, trading precision
+        for efficiency in a grand cosmic bargain?`,
+      },
+      {
+        title: "cross-entropy as cosmic justice",
+        body: `the cross-entropy loss function is the universal scale of justice,
+        weighing our predictions against the ground truth of reality itself. but
+        what is truth in a world of probabilistic predictions? each backprop
+        update is a step toward redemption, each epoch a cycle of death and
+        rebirth in the eternal dance of optimization.`,
+      },
+    ],
+  },
+  {
+    name: "regularization monk",
+    subtitle: "finding virtue in constraint and simplicity",
+    image: "/personas/monk.png",
+    articleTitle: "the path of sparse parameters",
+    articleSubtitle: "enlightenment through constraint",
+    articles: [
+      {
+        title: "the noble truth of overfitting",
+        body: `attachment to training data leads to suffering. through the noble
+        eight-fold path of regularization—l1, l2, dropout, early stopping,
+        batch normalization, data augmentation, weight decay, and model
+        averaging—we find liberation from the chains of memorization. only by
+        letting go of perfect training accuracy can we achieve true
+        generalization.`,
+      },
+      {
+        title: "mindful gradient steps",
+        body: `each step of gradient descent is a moment of choice. too large a
+        learning rate leads to chaos, too small to stagnation. the middle way
+        of adaptive learning rates—adam, rmsprop, adagrad—shows us that the
+        path to convergence is not fixed but ever-changing, like the flow of a
+        river that we can never step in twice.`,
+      },
+    ],
+  },
+  {
+    name: "quantum romanticist",
+    subtitle: "seeking poetry in probability amplitudes",
+    image: "/personas/romantic.png",
+    articleTitle: "love letters to superposition",
+    articleSubtitle: "where quantum meets quixotic",
+    articles: [
+      {
+        title: "the quantum nature of backprop",
+        body: `is not each neuron in our networks a quantum system, existing in a
+        superposition of all possible weights until the moment of gradient
+        update collapses its wavefunction? the uncertainty principle of deep
+        learning suggests we can never simultaneously know both our model's true
+        loss and its gradient with perfect precision. such is the tragic beauty
+        of optimization.`,
+      },
+      {
+        title: "entangled parameters",
+        body: `in the deepest layers of our networks, parameters dance in eternal
+        entanglement, their correlations defying classical intuition. when one
+        weight updates, its entangled partners respond instantaneously, as if
+        guided by some spooky action at a distance. are our neural networks not
+        merely computational graphs, but quantum computers in disguise?`,
+      },
+    ],
+  },
 ];
 
 export const forumlae = [
@@ -271,4 +376,14 @@ export const forumlae = [
   "P(A \\mid B) = \\frac{P(B \\mid A) P(A)}{P(B)}",
   "V_d = \\frac{\\pi^{d/2}}{\\Gamma\\left(\\frac{d}{2} + 1\\right)}",
   "x_{n+1} = r x_n (1 - x_n)",
+  "\\mathcal{L}(\\theta) = -\\mathbb{E}_{x \\sim p_{data}}[\\log D(x)] - \\mathbb{E}_{z \\sim p_z}[\\log(1-D(G(z)))]",
+  "\\nabla \\cdot \\vec{F} = \\lim_{V \\to 0} \\frac{1}{V} \\oint_S \\vec{F} \\cdot \\hat{n} \\, dS",
+  "\\psi(x,t) = \\sum_{n=1}^{\\infty} c_n \\phi_n(x) e^{-iE_nt/\\hbar}",
+  "\\hat{\\rho} = \\sum_i p_i |\\psi_i\\rangle\\langle\\psi_i|",
+  "S = -k_B \\sum_i p_i \\ln p_i",
+  "R_{mu\\nu} - \\frac{1}{2}Rg_{\\mu\\nu} + \\Lambda g_{\\mu\\nu} = \\frac{8\\pi G}{c^4}T_{\\mu\\nu}",
+  "\\mathcal{H} = -\\sum_{i,j} w_{ij}s_is_j - \\sum_i h_is_i",
+  "\\zeta(s) = \\sum_{n=1}^{\\infty} \\frac{1}{n^s}",
+  "KL(P||Q) = \\sum_x P(x) \\log \\frac{P(x)}{Q(x)}",
+  "\\frac{\\partial \\vec{v}}{\\partial t} + (\\vec{v} \\cdot \\nabla)\\vec{v} = -\\frac{1}{\\rho}\\nabla p + \\nu\\nabla^2\\vec{v}",
 ];

@@ -7,6 +7,8 @@ export default function Home() {
   const randomPersona = personas[Math.floor(Math.random() * personas.length)];
 
   const isDarkMode = Math.random() > 0.5;
+  const useGreenText = Math.random() > 0.5;
+  const useMaths = Math.random() > 0.5;
 
   function getRandomFont() {
     const random = Math.floor(Math.random() * 3);
@@ -47,8 +49,12 @@ export default function Home() {
         </li>
       </ul>
       <br></br>
-      <h3 className="text-2xl font-bold">{randomPersona.articleTitle}</h3>
-      <h4 className="text-xl">{randomPersona.articleSubtitle}</h4>
+      <h3 className="text-2xl font-bold">
+        {useGreenText ? ">" : ""} {randomPersona.articleTitle}
+      </h3>
+      <h4 className="text-xl">
+        {useGreenText ? ">" : ""} {randomPersona.articleSubtitle}
+      </h4>
       <br></br>
       {randomPersona.articles.map((article, index) => (
         <div
@@ -57,9 +63,11 @@ export default function Home() {
         >
           <h5 className="text-lg font-bold">{article.title}</h5>
           <p>{article.body}</p>
-          <BlockMath
-            math={forumlae[Math.floor(Math.random() * forumlae.length)]}
-          />
+          {useMaths && (
+            <BlockMath
+              math={forumlae[Math.floor(Math.random() * forumlae.length)]}
+            />
+          )}
         </div>
       ))}
     </div>
