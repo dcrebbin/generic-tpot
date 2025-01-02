@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { BlockMath } from "react-katex";
 import "katex/dist/katex.min.css";
