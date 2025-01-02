@@ -22,6 +22,9 @@ export default function Home() {
     useSanta: Math.random() > 0.8,
     useGlasses: Math.random() > 0.8,
     useMaths: Math.random() > 0.5,
+    hasGoogleScholar: Math.random() > 0.98,
+    hasArxiv: Math.random() > 0.95,
+    hasGithub: Math.random() > 0.3,
     bookRec: bookRecs[Math.floor(Math.random() * bookRecs.length)],
     interests: (() => {
       const randomInterests = new Set();
@@ -107,19 +110,41 @@ export default function Home() {
         />
       </div>
       <ul className="flex flex-row gap-4">
-        <li>
-          <a
-            className="text-blue-700 hover:underline"
-            href="https://github.com/"
-          >
-            • github
-          </a>
-        </li>
+        {randomState.hasGithub && (
+          <li>
+            <a
+              className="text-blue-700 hover:underline"
+              href="https://github.com/"
+            >
+              • github
+            </a>
+          </li>
+        )}
         <li>
           <a className="text-blue-700 hover:underline" href="https://x.com/">
             • x
           </a>
         </li>
+        {randomState.hasGoogleScholar && (
+          <li>
+            <a
+              className="text-blue-700 hover:underline"
+              href="https://scholar.google.com/"
+            >
+              • google scholar
+            </a>
+          </li>
+        )}
+        {randomState.hasArxiv && (
+          <li>
+            <a
+              className="text-blue-700 hover:underline"
+              href="https://arxiv.org/"
+            >
+              • arxiv
+            </a>
+          </li>
+        )}
       </ul>
       interests: {randomState.interests.join(" | ")}
       <br></br>
