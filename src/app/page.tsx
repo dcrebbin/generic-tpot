@@ -13,6 +13,7 @@ export default function Home() {
     pfp: pfp[Math.floor(Math.random() * pfp.length)],
     isDarkMode: Math.random() > 0.5,
     useGreenText: Math.random() > 0.5,
+    useSanta: Math.random() > 0.8,
     useMaths: Math.random() > 0.5,
     font: (() => {
       const random = Math.floor(Math.random() * 3);
@@ -38,7 +39,23 @@ export default function Home() {
     >
       <h1 className="text-4xl font-bold">{randomState.persona.name}</h1>
       <h2 className="text-xl">{randomState.persona.subtitle}</h2>
-      <Image src={randomState.pfp} alt="logo" width={200} height={200} />
+      <div className="relative mt-10">
+        {randomState.useSanta && (
+          <Image
+            className={`absolute ${randomState.pfp.santaPos}`}
+            src="/addons/santa.png"
+            alt="logo"
+            width={200}
+            height={200}
+          />
+        )}
+        <Image
+          src={`/personas/${randomState.pfp.name}.png`}
+          alt="logo"
+          width={200}
+          height={200}
+        />
+      </div>
       <ul className="flex flex-row gap-4">
         <li>
           <a

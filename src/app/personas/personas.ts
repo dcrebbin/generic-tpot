@@ -588,17 +588,61 @@ export const forumlae = [
 ];
 
 export const pfp = [
-  "/personas/lain.jpeg",
-  "/personas/philosopher.png",
-  "/personas/guts.png",
-  "/personas/data.png",
-  "/personas/frieren.png",
-  "/personas/catgirl.png",
-  "/personas/ethics.png",
-  "/personas/monk.png",
-  "/personas/romantic.png",
-  "/personas/zen.png",
-  "/personas/mystic.png",
-  "/personas/prophet.png",
-  "/personas/kaneki.png",
+  {
+    name: "philosopher",
+    santaPos: "bottom-[5rem] left-6",
+    glassesPos: "top-10 right-10",
+  },
+  {
+    name: "guts",
+    santaPos: "bottom-[5rem] left-[-1rem]",
+    glassesPos: "top-10 right-10",
+  },
+  {
+    name: "lain",
+    santaPos: "bottom-[5rem] left-[2rem]",
+    glassesPos: "top-10 right-10",
+  },
+  {
+    name: "data",
+    santaPos: "bottom-[6rem] left-6",
+    glassesPos: "top-10 right-10",
+  },
+  {
+    name: "frieren",
+    santaPos: "bottom-32 left-6",
+    glassesPos: "top-10 right-10",
+  },
+  {
+    name: "catgirl",
+    santaPos: "bottom-32 left-6",
+    glassesPos: "top-10 right-10",
+  },
+  {
+    name: "ethics",
+    santaPos: "bottom-[6rem] left-6",
+    glassesPos: "top-10 right-10",
+  },
+  { name: "monk", santaPos: "bottom-[4rem]", glassesPos: "top-10 right-10" },
+  {
+    name: "romantic",
+    santaPos: "bottom-[0rem] left-6",
+    glassesPos: "top-10 right-10",
+  },
+  { name: "zen", santaPos: "bottom-[3rem]", glassesPos: "top-10 right-10" },
+  {
+    name: "mystic",
+    santaPos: "bottom-10 left-6",
+    glassesPos: "top-10 right-10",
+  },
+  {
+    name: "prophet",
+    santaPos: "bottom-[6rem] left-6",
+    glassesPos: "top-10 right-10",
+  },
+  {
+    name: "kaneki",
+    santaPos: "left-[4.5rem] bottom-[0rem]",
+    glassesPos: "top-10 right-10",
+  },
 ];
