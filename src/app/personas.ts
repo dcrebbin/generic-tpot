@@ -784,11 +784,15 @@ export const interests = [
   "ml",
   "computer science",
   "dead lifting",
+  "matcha monday",
+  "the sesh",
   "league of legends",
+  "perplexity",
   "neovim",
   "rust",
   "go language",
   "capybaras",
+  "mira",
   "minecraft skywars",
   "java/javascript",
   "philosophy",
@@ -818,6 +822,23 @@ export const interests = [
   "musing on the nature of reality",
   "the meaning of life",
   "rien ne sert de grandir",
+];
+
+export const ides = [
+  "vscode",
+  "cursor",
+  "pearai",
+  "neovim",
+  "eclipse",
+  "intellij",
+  "notepad",
+  "vim",
+  "notepad++",
+  "visual studio",
+  "chrome dev tools",
+  "webstorm",
+  "pycharm",
+  "goland",
 ];
 
 export const forumlae = [
