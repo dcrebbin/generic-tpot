@@ -600,4 +600,5 @@ export const pfp = [
   "/personas/zen.png",
   "/personas/mystic.png",
   "/personas/prophet.png",
+  "/personas/kaneki.png",
 ];
