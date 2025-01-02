@@ -649,4 +649,9 @@ export const pfp = [
     santaPos: "left-[4.5rem] bottom-[0rem]",
     glassesPos: "top-0 left-4",
   },
+  {
+    name: "giyu",
+    santaPos: "left-0 bottom-[5rem]",
+    glassesPos: "top-[1rem] left-0",
+  },
 ];
