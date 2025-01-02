@@ -210,6 +210,7 @@ export default function Home() {
         Copyright © {new Date().getFullYear()} {randomState.persona.name}
         <br></br>
         <a
+          target="_blank"
           className="text-blue-700 hover:underline"
           href="https://github.com/dcrebbin/generic-tpot"
         >
