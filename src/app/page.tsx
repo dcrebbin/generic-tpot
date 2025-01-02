@@ -3,13 +3,7 @@
 import Image from "next/image";
 import { BlockMath } from "react-katex";
 import "katex/dist/katex.min.css";
-import {
-  bookRecs,
-  forumlae,
-  interests,
-  personas,
-  pfp,
-} from "./personas/personas";
+import { bookRecs, forumlae, interests, personas, pfp } from "./personas";
 import { useState, useEffect } from "react";
 
 export default function Home() {
