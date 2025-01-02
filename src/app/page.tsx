@@ -21,7 +21,7 @@ export default function Home() {
     useMaths: Math.random() > 0.5,
     hasGoogleScholar: Math.random() > 0.98,
     hasArxiv: Math.random() > 0.95,
-    hasWeather: true,
+    hasWeather: Math.random() > 0.8,
     weatherType: weatherTypes[Math.floor(Math.random() * weatherTypes.length)],
     hasGithub: Math.random() > 0.3,
     bookRec: bookRecs[Math.floor(Math.random() * bookRecs.length)],
