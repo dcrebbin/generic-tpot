@@ -8,6 +8,8 @@ import { useState, useEffect } from "react";
 
 export default function Home() {
   const [isClient, setIsClient] = useState(false);
+
+  const weatherTypes = ["raining", "cherryBlossoms", "snow"];
   const [randomState] = useState(() => ({
     persona: personas[Math.floor(Math.random() * personas.length)],
     pfp: pfp[Math.floor(Math.random() * pfp.length)],
@@ -19,6 +21,8 @@ export default function Home() {
     useMaths: Math.random() > 0.5,
     hasGoogleScholar: Math.random() > 0.98,
     hasArxiv: Math.random() > 0.95,
+    hasWeather: true,
+    weatherType: weatherTypes[Math.floor(Math.random() * weatherTypes.length)],
     hasGithub: Math.random() > 0.3,
     bookRec: bookRecs[Math.floor(Math.random() * bookRecs.length)],
     interests: (() => {
@@ -76,6 +80,16 @@ export default function Home() {
         randomState.persona.name == "neural net bogan" ? "rotate-180" : ""
       }`}
     >
+      {randomState.hasWeather && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          className={`fixed top-0 left-0 z-0 h-screen w-full ${
+            randomState.weatherType == "snow" ? "mix-blend-screen" : ""
+          }`}
+          src={`/weather/${randomState.weatherType}.gif`}
+          alt="weather"
+        />
+      )}
       <h1 className="text-4xl font-bold">{randomState.persona.name}</h1>
       <h2 className="text-xl">{randomState.persona.subtitle}</h2>
       <div className="relative mt-10">
@@ -83,7 +97,7 @@ export default function Home() {
           <Image
             className={`absolute z-50 ${randomState.pfp.cursorCrownPos}`}
             src="/addons/cursorCrown.png"
-            alt="logo"
+            alt="cursor crown"
             width={100}
             height={100}
           />
