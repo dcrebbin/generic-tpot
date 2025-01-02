@@ -23,8 +23,8 @@ export default function Home() {
 
   return (
     <div
-      className={`px-40 ${
-        isDarkMode ? "bg-black text-white" : "bg-white min-h-screen text-black"
+      className={`min-h-[100vh] p-10 px-40 lg:px-80 ${
+        isDarkMode ? "bg-black text-white" : "bg-white  text-black"
       } ${getRandomFont()}`}
     >
       <h1 className="text-4xl font-bold">{randomPersona.name}</h1>
@@ -34,16 +34,13 @@ export default function Home() {
         <li>
           <a
             className="text-blue-700 hover:underline"
-            href="https://github.com/mlanon"
+            href="https://github.com/"
           >
             • github
           </a>
         </li>
         <li>
-          <a
-            className="text-blue-700 hover:underline"
-            href="https://x.com/mlanon"
-          >
+          <a className="text-blue-700 hover:underline" href="https://x.com/">
             • x
           </a>
         </li>
@@ -68,8 +65,12 @@ export default function Home() {
               math={forumlae[Math.floor(Math.random() * forumlae.length)]}
             />
           )}
+          <br></br>
         </div>
       ))}
+      <footer className="text-center text-sm pt-10">
+        Copyright © 2025 {randomPersona.name}
+      </footer>
     </div>
   );
 }
