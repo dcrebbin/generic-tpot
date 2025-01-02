@@ -74,7 +74,7 @@ export default function Home() {
 
   return (
     <div
-      className={`min-h-[100vh] p-10 px-10 lg:px-40 xl:px-80 w-full ${
+      className={`min-h-[100vh] p-10 px-10 lg:px-40 xl:px-80 overflow-x-hidden w-full ${
         randomState.isDarkMode ? "bg-black text-white" : "bg-white  text-black"
       } ${randomState.font} ${
         randomState.persona.name == "neural net bogan" ? "rotate-180" : ""
@@ -83,7 +83,7 @@ export default function Home() {
       {randomState.hasWeather && (
         // eslint-disable-next-line @next/next/no-img-element
         <img
-          className={`fixed top-0 left-0 z-0 h-screen w-full ${
+          className={`fixed top-0 left-0 pointer-events-none z-0 h-screen w-full ${
             randomState.weatherType == "snow" ? "mix-blend-screen" : ""
           }`}
           src={`/weather/${randomState.weatherType}.gif`}
