@@ -1,5 +1,113 @@
 export const personas = [
   {
+    name: "teapot",
+    subtitle: "exploring the art and science of tea",
+    image: "/personas/teapot.png",
+    articleTitle: "steeping perfection",
+    articleSubtitle: "a guide to the world of tea",
+    articles: [
+      {
+        title: "steeping perfection",
+        body: `Making tea is both art and science. Too hot? You scorch the leaves. Too
+        cold? The flavors stay hidden. The sweet spot for most green teas? Around
+        80°C for 2-3 minutes. But don't let the rules box you in—experimenting is
+        part of the fun.`,
+      },
+      {
+        title: "the majesty of oolong",
+        body: `Oolong is the middle ground of tea, sitting perfectly between green and
+        black. The partially oxidized leaves offer a complexity unmatched by most
+        other types. Pro tip: rinse the leaves with a quick hot-water pour before
+        brewing to unlock their full potential.`,
+      },
+      {
+        title: "gongfu brewing: more tea, less water",
+        body: `Gongfu brewing is like the espresso of tea—concentrated, deliberate, and
+        intensely flavorful. Use a small teapot or gaiwan, lots of tea leaves, and
+        short steeping times. The result? A cascade of nuanced flavors in every
+        sip, evolving with each brew.`,
+      },
+      {
+        title: "matcha: the green gold",
+        body: `Matcha is powdered green tea at its finest. Whisk it with a bamboo
+        chasen, using water just below boiling. The frothy, vibrant result is as much
+        a visual experience as it is a sensory delight. And yes, it's worth
+        splurging on ceremonial-grade matcha for the occasional indulgence.`,
+      },
+      {
+        title: "tea bags vs. loose leaf",
+        body: `Tea bags are convenient, sure, but loose leaf tea is where the magic
+        happens. Whole leaves unfurl, releasing flavors you just can’t get from
+        crushed, bagged dust. Invest in a good infuser or teapot—you'll never look
+        back.`,
+      },
+      {
+        title: "water quality: the unsung hero",
+        body: `You can't make great tea without great water. Filtered water works best
+        to let the tea's true flavors shine. Hard water can mute delicate notes,
+        while distilled water can make tea taste flat. Aim for the Goldilocks zone:
+        balanced minerals, fresh, and pure.`,
+      },
+      {
+        title: "the science of tea's health benefits",
+        body: `Tea isn't just a drink—it's an elixir. Packed with antioxidants like
+        catechins and polyphenols, it fights free radicals and promotes well-being.
+        Green tea boosts metabolism, black tea improves focus, and herbal teas soothe
+        the soul. Cheers to health in every cup!`,
+      },
+    ],
+  },
+  {
+    name: "badmemphisto",
+    image: "/personas/badmemphisto.jpg",
+    subtitle: "keeping it real with deep learning and coding",
+    articleTitle: "learning by doing (and debugging)",
+    articleSubtitle: "practical insights from a coding journey",
+    articles: [
+      {
+        title: "learning by doing (and debugging)",
+        body: `Deep learning isn't magic; it's just a lot of matrix math, some gradient
+        descent, and endless debugging. Seriously, if you're not spending half your
+        time scratching your head over why your model doesn't converge, are you even
+        training a neural net?`,
+      },
+      {
+        title: "the joy of small, hacky projects",
+        body: `You don't need a billion-dollar lab or a massive GPU cluster to learn
+        machine learning. Start small. Train a neural net to generate memes. Write a
+        Python script to optimize your coffee brewing schedule. The fun projects
+        teach you way more than dry theory.`,
+      },
+      {
+        title: "neural nets: just glorified curve fitting",
+        body: `People get way too caught up in the mystique of neural networks.
+        They're just fancy, glorified curve fitters. Sure, they're great at what they
+        do, but let's not act like we're summoning Skynet here. Keep it simple, and
+        let the math do the talking.`,
+      },
+      {
+        title: "overfitting to your own life",
+        body: `Life's a dataset, and sometimes you're just overfitting. Take a step
+        back. Regularize. Don't let one bad loss function define your whole training
+        process. Remember: learning is iterative.`,
+      },
+      {
+        title: "make your code readable (future-you will thank you)",
+        body: `Ever come back to a piece of your own code and wonder if you were
+        actively trying to confuse yourself? Yeah, me too. Write code like you're
+        explaining it to a slightly dumber version of yourself from six months ago.
+        You'll save so much time.`,
+      },
+      {
+        title: "the 80/20 rule of deep learning",
+        body: `80% of your results come from nailing the basics: a good dataset,
+        sensible hyperparameters, and debugging your data pipeline. The remaining
+        20%? That's where you can mess around with attention mechanisms and GPT-sized
+        models. Don't skip the fundamentals.`,
+      },
+    ],
+  },
+  {
     name: "ਅਕਲਮੰਦ ਸੁਚੇਤਕ (The Wise Visionary)",
     subtitle: "ਭਵਿੱਖ ਦੇ ਏ.ਜੀ.ਆਈ. ਤੇ ਚਿੰਤਾਵਾਂ",
     articleTitle: "ਭਵਿੱਖ ਦਾ ਏ.ਜੀ.ਆਈ. ਦ੍ਰਿਸ਼",

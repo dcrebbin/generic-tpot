@@ -5,9 +5,11 @@ import { BlockMath } from "react-katex";
 import "katex/dist/katex.min.css";
 import { bookRecs, forumlae, interests, personas, pfp } from "./personas";
 import { useState, useEffect } from "react";
+import { useRef } from "react";
 
 export default function Home() {
   const [isClient, setIsClient] = useState(false);
+  const contentRef = useRef<HTMLDivElement>(null);
 
   const weatherTypes = ["raining", "cherryBlossoms", "snow"];
   const [randomState] = useState(() => ({
@@ -74,6 +76,7 @@ export default function Home() {
 
   return (
     <div
+      ref={contentRef}
       className={`min-h-[100vh] p-10 px-10 lg:px-40 xl:px-80 overflow-x-hidden w-full ${
         randomState.isDarkMode ? "bg-black text-white" : "bg-white  text-black"
       } ${randomState.font} ${
@@ -93,86 +96,100 @@ export default function Home() {
       <h1 className="text-4xl font-bold">{randomState.persona.name}</h1>
       <h2 className="text-xl">{randomState.persona.subtitle}</h2>
       <div className="relative mt-10">
-        {randomState.useCursorCrown && (
-          <Image
-            className={`absolute z-50 ${randomState.pfp.cursorCrownPos}`}
-            src="/addons/cursorCrown.png"
-            alt="cursor crown"
-            width={100}
-            height={100}
-          />
-        )}
-        {randomState.useGlasses && (
-          <Image
-            className={`absolute ${randomState.pfp.glassesPos}`}
-            src="/addons/glasses.png"
-            alt="logo"
-            width={200}
-            height={200}
-          />
-        )}
-        {randomState.useSanta && (
-          <Image
-            className={`absolute ${randomState.pfp.santaPos}`}
-            src="/addons/santa.png"
-            alt="logo"
-            width={200}
-            height={200}
-          />
-        )}
+        {randomState.persona.name !== "badmemphisto" &&
+        randomState.persona.name !== "teapot" ? (
+          <>
+            {randomState.useCursorCrown && (
+              <Image
+                className={`absolute z-50 ${randomState.pfp.cursorCrownPos}`}
+                src="/addons/cursorCrown.png"
+                alt="cursor crown"
+                width={100}
+                height={100}
+              />
+            )}
+            {randomState.useGlasses && (
+              <Image
+                className={`absolute ${randomState.pfp.glassesPos}`}
+                src="/addons/glasses.png"
+                alt="logo"
+                width={200}
+                height={200}
+              />
+            )}
+
+            {randomState.useSanta && (
+              <Image
+                className={`absolute ${randomState.pfp.santaPos}`}
+                src="/addons/santa.png"
+                alt="logo"
+                width={200}
+                height={200}
+              />
+            )}
+          </>
+        ) : null}
         <Image
-          src={`/personas/${randomState.pfp.name}.png`}
+          src={
+            randomState.persona.image
+              ? randomState.persona.image
+              : `/personas/${randomState.pfp.name}.png`
+          }
           alt="logo"
           width={200}
           height={200}
         />
       </div>
-      <ul className="flex flex-row gap-4">
-        {randomState.hasGithub && (
-          <li>
-            <a
-              target="_blank"
-              className="text-blue-700 hover:underline"
-              href="https://github.com/dcrebbin"
-            >
-              • github
-            </a>
-          </li>
-        )}
-        <li>
-          <a
-            target="_blank"
-            className="text-blue-700 hover:underline"
-            href="https://x.com/dcrebbin_"
-          >
-            • x
-          </a>
-        </li>
-        {randomState.hasGoogleScholar && (
-          <li>
-            <a
-              target="_blank"
-              className="text-blue-700 hover:underline"
-              href="https://scholar.google.com/"
-            >
-              • google scholar
-            </a>
-          </li>
-        )}
-        {randomState.hasArxiv && (
-          <li>
-            <a
-              target="_blank"
-              className="text-blue-700 hover:underline"
-              href="https://arxiv.org/"
-            >
-              • arxiv
-            </a>
-          </li>
-        )}
-      </ul>
-      interests: {randomState.interests.join(" | ")}
-      <br></br>
+      {randomState.persona.name !== "badmemphisto" &&
+      randomState.persona.name !== "teapot" ? (
+        <>
+          <ul className="flex flex-row gap-4">
+            {randomState.hasGithub && (
+              <li>
+                <a
+                  target="_blank"
+                  className="text-blue-700 hover:underline"
+                  href="https://github.com/dcrebbin"
+                >
+                  • github
+                </a>
+              </li>
+            )}
+            <li>
+              <a
+                target="_blank"
+                className="text-blue-700 hover:underline"
+                href="https://x.com/dcrebbin_"
+              >
+                • x
+              </a>
+            </li>
+            {randomState.hasGoogleScholar && (
+              <li>
+                <a
+                  target="_blank"
+                  className="text-blue-700 hover:underline"
+                  href="https://scholar.google.com/"
+                >
+                  • google scholar
+                </a>
+              </li>
+            )}
+            {randomState.hasArxiv && (
+              <li>
+                <a
+                  target="_blank"
+                  className="text-blue-700 hover:underline"
+                  href="https://arxiv.org/"
+                >
+                  • arxiv
+                </a>
+              </li>
+            )}
+          </ul>
+          interests: {randomState.interests.join(" | ")}
+        </>
+      ) : null}
       <br></br>
       <h3 className="text-2xl font-bold">
         {randomState.useGreenText ? ">" : ""} {randomState.persona.articleTitle}
@@ -197,15 +214,20 @@ export default function Home() {
           <br></br>
         </div>
       ))}
-      <h3>book recommendation (referral)</h3>
-      <br></br>
-      <a
-        className="text-blue-700 hover:underline"
-        href={randomState.bookRec.link}
-      >
-        {randomState.bookRec.name}
-      </a>
-      <p>{randomState.bookRec.review}</p>
+      {randomState.persona.name !== "badmemphisto" &&
+      randomState.persona.name !== "teapot" ? (
+        <>
+          <h3>book recommendation (referral)</h3>
+          <br></br>
+          <a
+            className="text-blue-700 hover:underline"
+            href={randomState.bookRec.link}
+          >
+            {randomState.bookRec.name}
+          </a>
+          <p>{randomState.bookRec.review}</p>
+        </>
+      ) : null}
       <footer className="text-center text-sm pt-10">
         Copyright © {new Date().getFullYear()} {randomState.persona.name}
         <br></br>
