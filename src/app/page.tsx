@@ -207,7 +207,7 @@ export default function Home() {
       </a>
       <p>{randomState.bookRec.review}</p>
       <footer className="text-center text-sm pt-10">
-        Copyright © 2025 {randomState.persona.name}
+        Copyright © {new Date().getFullYear()} {randomState.persona.name}
         <br></br>
         <a
           className="text-blue-700 hover:underline"
