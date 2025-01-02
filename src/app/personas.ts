@@ -63,7 +63,7 @@ export const personas = [
   {
     name: "Butter Chicken",
     subtitle: "celebrating creamy curries and Indian delights",
-    image: "/personas/butter-chicken.jpeg",
+    image: "/personas/butter-chicken.png",
     articleTitle: "the buttery road to happiness",
     articleSubtitle: "a love letter to butter chicken, naan, and mango lassi",
     articles: [
