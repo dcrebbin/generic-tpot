@@ -669,9 +669,31 @@ export const interests = [
   "computer science",
   "dead lifting",
   "league of legends",
+  "neovim",
+  "rust",
+  "go language",
   "capybaras",
+  "minecraft skywars",
+  "java/javascript",
   "philosophy",
+  "life",
+  "assembly code",
+  "tesla",
+  "fortnite 90s",
+  "spacex",
+  "calling twitter, x",
+  "equations on a chalkboard",
+  "algorithms",
+  "e/acc",
+  "/dd",
+  "bjj",
+  "memecoins",
+  "roaringkitty",
+  "podcasts",
+  "looking at the $NVDA stock chart",
+  "claude sonnet 3.5 with cursor and vercel v0",
   "quantum physics",
+  "buying & then not reading books",
   "pondering",
   "steak",
   "deep conversations",
@@ -697,6 +719,57 @@ export const forumlae = [
   "\\zeta(s) = \\sum_{n=1}^{\\infty} \\frac{1}{n^s}",
   "KL(P||Q) = \\sum_x P(x) \\log \\frac{P(x)}{Q(x)}",
   "\\frac{\\partial \\vec{v}}{\\partial t} + (\\vec{v} \\cdot \\nabla)\\vec{v} = -\\frac{1}{\\rho}\\nabla p + \\nu\\nabla^2\\vec{v}",
+];
+
+export const bookRecs = [
+  {
+    name: "Atomic Habits",
+    link: "https://amzn.to/4gJ1c63",
+    review:
+      "A deeply introspective guide to habit formation, this book explores the microcosmic transformations that ripple into macrocosmic change. Clear’s prose oscillates between pragmatism and poeticism, making the mundane act of habit-building feel akin to an existential journey.",
+  },
+  {
+    name: "Algorithms to Live By",
+    link: "https://amzn.to/3ZXZuXu",
+    review:
+      "A mesmerizing foray into the intersection of computational logic and human decision-making. This book does not merely bridge the gap between mathematics and psychology—it obliterates it, weaving a tapestry where the Turing machine and the human psyche are kindred spirits.",
+  },
+  {
+    name: "Computer Systems: A Programmer's Perspective",
+    link: "https://amzn.to/3DALQSD",
+    review:
+      "A magnum opus for the modern programmer, this tome peels back the abstraction of high-level code to reveal the sublime machinery beneath. It is as much a technical manual as it is a love letter to the architecture of computation.",
+  },
+  {
+    name: "Zero to One: Notes on Startups, or How to Build the Future",
+    link: "https://amzn.to/3DOa5fT",
+    review:
+      "Thiel’s treatise transcends the platitudes of entrepreneurial self-help, delivering instead a philosophical exploration of creation and originality. It is not merely about building startups; it is about reshaping reality with the audacity of a contrarian visionary.",
+  },
+  {
+    name: "How to Design Programs: An Introduction to Programming and Computing",
+    link: "https://amzn.to/4gu4KZP",
+    review:
+      "More than a textbook, this work is a pedagogical symphony that transforms the rudiments of programming into an art form. Each chapter is an aria, guiding the reader toward enlightenment through recursive elegance and functional purity.",
+  },
+  {
+    name: "Introduction to Algorithms, fourth edition",
+    link: "https://amzn.to/40hnIx4",
+    review:
+      "Often referred to as the ‘Bible’ of algorithms, this book is less a manual and more an intellectual pilgrimage. Its dense proofs and rigorous exposition reward the reader with insights that feel less learned than unearthed, like forgotten relics of ancient computational wisdom.",
+  },
+  {
+    name: "Designing Data-Intensive Applications",
+    link: "https://amzn.to/402WrNo",
+    review:
+      "Kleppmann’s work is a masterclass in taming the chaos of distributed systems and large-scale data flows. It takes the reader on an odyssey through CAP theorems and consistency guarantees, a journey where each challenge reveals the ineffable beauty of modern data architecture.",
+  },
+  {
+    name: "Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations",
+    link: "https://amzn.to/402kJY8",
+    review:
+      "This is not just a manifesto for modern software development but a scientific treatise on velocity and adaptability. The book's metrics and methodologies shimmer with an almost metaphysical significance, as if unlocking the secrets of organizational transcendence.",
+  },
 ];
 
 export const pfp = [

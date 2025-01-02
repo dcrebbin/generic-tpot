@@ -3,7 +3,13 @@
 import Image from "next/image";
 import { BlockMath } from "react-katex";
 import "katex/dist/katex.min.css";
-import { forumlae, interests, personas, pfp } from "./personas/personas";
+import {
+  bookRecs,
+  forumlae,
+  interests,
+  personas,
+  pfp,
+} from "./personas/personas";
 import { useState, useEffect } from "react";
 
 export default function Home() {
@@ -16,6 +22,7 @@ export default function Home() {
     useSanta: Math.random() > 0.8,
     useGlasses: Math.random() > 0.8,
     useMaths: Math.random() > 0.5,
+    bookRec: bookRecs[Math.floor(Math.random() * bookRecs.length)],
     interests: (() => {
       const randomInterests = new Set();
       while (randomInterests.size < 3) {
@@ -117,8 +124,24 @@ export default function Home() {
           <br></br>
         </div>
       ))}
+      <h3>book recommendation (referral)</h3>
+      <br></br>
+      <a
+        className="text-blue-700 hover:underline"
+        href={randomState.bookRec.link}
+      >
+        {randomState.bookRec.name}
+      </a>
+      <p>{randomState.bookRec.review}</p>
       <footer className="text-center text-sm pt-10">
         Copyright © 2025 {randomState.persona.name}
+        <br></br>
+        <a
+          className="text-blue-700 hover:underline"
+          href="https://github.com/dcrebbin/generic-tpot"
+        >
+          source code
+        </a>
       </footer>
     </div>
   );
