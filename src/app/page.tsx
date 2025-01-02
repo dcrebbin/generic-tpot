@@ -44,7 +44,9 @@ export default function Home() {
     <div
       className={`min-h-[100vh] p-10 px-40 lg:px-80 ${
         randomState.isDarkMode ? "bg-black text-white" : "bg-white  text-black"
-      } ${randomState.font}`}
+      } ${randomState.font} ${
+        randomState.persona.name == "neural net bogan" ? "rotate-180" : ""
+      }`}
     >
       <h1 className="text-4xl font-bold">{randomState.persona.name}</h1>
       <h2 className="text-xl">{randomState.persona.subtitle}</h2>
